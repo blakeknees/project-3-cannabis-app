@@ -5,9 +5,99 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  max-width: 1901px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+img.smallPic {
+  height: 100px;
+  width: 100px;
+}
+
+button {
+  padding: .3rem;
+  border: 1px dotted blueviolet;
+  background-color: pink;
+  width: 100%;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: lavender;
+}
+
+.col1 {
+  flex-basis: 100%;
+}
+
+.col2 {
+  flex-basis: 100%;
+}
+
+.sideLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.Header {
+  text-align: center;
+  background-color: lavender;
+  min-height: 60vh;
+  font-size: calc(10px + 2vmin);
+  color: rgb(46, 197, 189);
+}
+
+.Dispensary {
+  background-color: lavender;
+  color: rgb(46, 197, 189);
+}
+
+.ShopArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.ProductBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25rem;
+  height: 35rem;
+  border: 3px solid black;
+  border-radius: 5%;
+
+}
+
+.card {
+  background-color: white;
+  border-radius: 3%;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.Cart {
+  background-color: pink;
+  height: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .col1 {
+      flex: 1;
+    }
+  
+    .col2 {
+      flex: 2;
+    }
 }
