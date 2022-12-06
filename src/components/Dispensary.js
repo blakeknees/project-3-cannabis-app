@@ -11,7 +11,7 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                 
                 <div className="ShopArea">
                     <div className="CategoryBox">
-                        <h4>Flower</h4>
+                            <h4>Flower</h4>
                         <div className="ProductBox">
                             {products["flower"].map((product) => {
 

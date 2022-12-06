@@ -6,7 +6,7 @@ const Header = ({countCartItems, cartItems, products, onAdd, onRemove}) => {
             <nav className="flex">
                 <div>
                     <a href="#/">
-                        <h1>WELCOME TO MY DISPENSARY!</h1>
+                        <h1 className="neonTitle">WELCOME TO MY DISPENSARY!</h1>
                     </a>
                 </div>
 
