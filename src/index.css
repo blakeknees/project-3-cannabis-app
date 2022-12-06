@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   max-width: 1901px;
+  background-color: lavender;
+}
+
+h1, h2, h3, h4, p {
+  text-align: center;
 }
 
 a {
@@ -26,48 +31,99 @@ button {
   cursor: pointer;
 }
 
+button.badge {
+  background-color: aquamarine;
+  border: none;
+  color: purple;
+  width: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+
+  background-color: rgb(196, 196, 255);
+  
+}
+
+nav a{
+  display: flex;
+
+}
+
 ul {
   list-style: none;
+}
+
+h1 {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.Header h2 {
+  margin-top: 10rem;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  max-width: 1901px;
+}
+
+.shopWrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 1901px;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
-  background-color: lavender;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 .col1 {
-  flex-basis: 100%;
+  flex: 1;
 }
 
 .col2 {
-  flex-basis: 100%;
-}
-
-.sideLinks {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
+  flex: 2;
 }
 
 .Header {
   text-align: center;
   background-color: lavender;
-  min-height: 60vh;
+  min-height: 40vh;
   font-size: calc(10px + 2vmin);
   color: rgb(46, 197, 189);
+}
+
+.sideLinks {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
 }
 
 .Dispensary {
   background-color: lavender;
   color: rgb(46, 197, 189);
+  margin-bottom: 4rem;
 }
 
 .ShopArea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 80%;
 }
 
 .ProductBox {
@@ -75,9 +131,8 @@ ul {
   flex-wrap: wrap;
   width: 25rem;
   height: 35rem;
-  border: 3px solid black;
+  border: 3px solid #f5be57;
   border-radius: 5%;
-
 }
 
 .card {
@@ -88,11 +143,81 @@ ul {
 }
 
 .Cart {
-  background-color: pink;
-  height: 50%;
+  background-color: lavender;
+  position: static;
 }
 
-@media screen and (min-width: 800px) {
+.Cart h2 {
+  margin-bottom: 1rem;
+}
+
+.cartContainer {
+  background-color: pink;
+  border-radius: 5%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.emptyCart {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 1401px){
+  h1 {
+      margin-top: 3rem;
+      margin-left: 5rem;
+  }
+
+  .Header {
+    min-height: 10vh;
+  }
+
+  .Header h2 {
+    margin-top: 10rem;
+  }
+
+  .Dispensary, .Cart {
+    margin-top: 2rem;
+  }
+
+  .shopWrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .ShopArea {
+    
+  }
+
+  .ProductBox {
+    width: 25rem;
+    height: 35rem;
+    border-radius: 5%;
+  }
+}
+
+@media screen and (max-width: 801px) {
   .col1 {
       flex: 1;
     }

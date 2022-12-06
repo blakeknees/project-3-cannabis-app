@@ -1,21 +1,31 @@
 
-const Header = () => {
-
+const Header = ({countCartItems, cartItems, products, onAdd, onRemove}) => {
+    
     return (
-        <div className="Header flex">
-            <div>
-                <a href="#/">
-                    <h1>WELCOME TO MY DISPENSARY!</h1>
-                </a>
-                <h2>What would you like to buy today?</h2>
-                <h3>Click the desired products to add them to your cart</h3>
-            </div>
-            <div className="sideLinks">
-                <a href="#/">Cart |
-                </a> <a href="#/">Sign In</a>
+        <div className="Header">
+            <nav className="flex">
+                <div>
+                    <a href="#/">
+                        <h1>WELCOME TO MY DISPENSARY!</h1>
+                    </a>
+                </div>
+
+                <div className="sideLinks">
+                    <a href="#/cart">
+                    Cart{' '}
+                    {countCartItems ? (
+                        <button className="badge">{countCartItems}</button>
+                    ) : (
+                        ''
+                    )}
+                    </a>{' '}
+                    <a href="#/signin">Sign In</a>
+                    </div>
+            </nav>
+            <div className="wrapper">
+                <h2 className="flex">What would you like to buy today?</h2>
             </div>
         </div>
-
     )
 }
 
