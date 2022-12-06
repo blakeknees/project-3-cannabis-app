@@ -36,7 +36,7 @@ const products = {
         id: '3',
         name: "RNTZ",
         class: "Hybrid",
-        brand: "Strains Limited",
+        brand: "Strains LTD",
         price: 35,
         weight: "3.5g",
         thc: "21%",

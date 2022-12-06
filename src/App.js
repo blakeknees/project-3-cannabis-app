@@ -39,24 +39,32 @@ function App() {
 
   return (
     <div>
-      <Header countCartItems={cartItems.length}
-        onAdd={onAdd}
-        products={products}
-        cartItems={cartItems} />
-        
-      <div className="flex shopWrapper">
-        <Dispensary 
-          products={products}
-          cartItems={cartItems}
+      <header>
+        <Header countCartItems={cartItems.length}
           onAdd={onAdd}
-          onRemove={onRemove} />
-        <Cart
           products={products}
-          cartItems={cartItems}
-          onAdd={onAdd}
-          onRemove={onRemove} />
-      </div>
+          cartItems={cartItems} />
+      </header>
+
+      <main>
+        <div className="flex shopWrapper">
+          <Dispensary 
+            products={products}
+            cartItems={cartItems}
+            onAdd={onAdd}
+            onRemove={onRemove} />
+
+          <Cart
+            products={products}
+            cartItems={cartItems}
+            onAdd={onAdd}
+            onRemove={onRemove} />
+        </div>
+      </main>  
+
+      <footer>
         <Footer />
+      </footer>
     </div>
   );
 }

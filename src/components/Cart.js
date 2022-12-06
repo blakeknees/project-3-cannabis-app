@@ -11,9 +11,9 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
 
     return (
         <div className="Cart col1">
-            <div className="">
-                <h2>CART ITEMS</h2>
+            <div>
                 <div className="cartContainer">
+                    <h2>YOUR CART</h2>
                 {cartItems.length === 0 && <div className="emptyCart">Cart is Empty</div>}
 
                 {cartItems.length === 0
@@ -28,7 +28,7 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
                             }
 
                             return (
-                                <div key={item.id} className="flex">
+                                <div key={item.id} className="flex fullCart">
                                     <div className="col1">{item.name}</div>
                                     <div className="col1">
                                         <button onClick={dispensaryOnRemove} className="remove">
@@ -47,24 +47,24 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
                 {cartItems.length !== 0 && (
                     <>
                     <hr />
-                    <div>
+                    <div className="flex fullCart">
                         <div className="col2">Items Price</div>
                         <div className="col1">${itemsPrice.toFixed(2)}</div>
                     </div>
-                    <div>
+                    <div className="flex fullCart">
                         <div className="col2">Tax Price</div>
                         <div className="col1">${taxPrice.toFixed(2)}</div>
                     </div>
-                    <div>
+                    <div className="flex fullCart">
                         <div className="col2">Shipping Price</div>
                         <div className="col1">${shippingPrice.toFixed(2)}</div>
                     </div>
-                    <div>
+                    <div className="flex fullCart">
                         <div className="col2">Total Price</div>
                         <div className="col1">${totalPrice.toFixed(2)}</div>
                     </div>
                     <hr />
-                    <div>
+                    <div className="flex">
                         <button onClick={() => alert('Implement Checkout!')}>
                             Checkout
                         </button>

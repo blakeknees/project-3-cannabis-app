@@ -8,10 +8,27 @@ body {
 
   max-width: 1901px;
   background-color: lavender;
+  font-size: 125%;
 }
 
 h1, h2, h3, h4, p {
   text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+p {
+  font-size: .75rem;
 }
 
 a {
@@ -25,7 +42,7 @@ img.smallPic {
 
 button {
   padding: .3rem;
-  border: 1px dotted blueviolet;
+  border: 2px dotted blueviolet;
   background-color: pink;
   width: 100%;
   cursor: pointer;
@@ -45,17 +62,17 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 20%;
+  height: 22%;
   display: flex;
 
   background-color: rgb(196, 196, 255);
-  /* change this!! */
   
 }
 
 nav a{
   display: flex;
-
+  font-size: 1.5rem;
+  color: #9900ff;
 }
 
 ul {
@@ -63,12 +80,13 @@ ul {
 }
 
 h1 {
-  margin-top: 3rem;
-  margin-left: 2rem;
+  margin-top: 5rem;
+  margin-left: 15rem;
 }
 
 .Header h2 {
-  margin-top: 10rem;
+  margin-top: 21rem;
+  margin-left: 2.25rem;
 }
 
 .wrapper {
@@ -104,9 +122,9 @@ h1 {
 .Header {
   text-align: center;
   background-color: lavender;
-  min-height: 40vh;
+  min-height: 20vh;
   font-size: calc(10px + 2vmin);
-  color: rgb(46, 197, 189);
+  color: #2ec5bd;
 }
 
 
@@ -153,7 +171,7 @@ h1 {
 
 .Dispensary {
   background-color: lavender;
-  color: rgb(46, 197, 189);
+  color: #2ec5bd;
   margin-bottom: 4rem;
 }
 
@@ -167,9 +185,10 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 25rem;
-  height: 35rem;
+  height: 40rem;
   border: 3px solid #f5be57;
   border-radius: 5%;
+  margin-bottom: 2rem;
 }
 
 .ProductBox {
@@ -177,20 +196,41 @@ h1 {
   grid-template-columns: 50% 50%;
 }
 
+.ProductBox ul {
+  padding-left: 2rem;
+  display: flex;
+}
+
+.ProductBox h4 {
+  margin: 0;
+}
+
+.ProductBox button {
+  border-radius: 5%;
+  color:#918a81;
+  font-weight: 700;
+}
+
 .card {
   background-color: white;
   border-radius: 3%;
   padding: 1rem;
-  /* margin: .5rem; */
+}
+.cardFlex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cardFlex p {
+  margin: .25rem;
 }
 
 .Cart {
   background-color: lavender;
-  position: static;
 }
 
 .Cart h2 {
-  margin-bottom: 1rem;
+  color:#2ec5bd;
+  margin-bottom: 2rem;
 }
 
 .cartContainer {
@@ -199,14 +239,19 @@ h1 {
   height: 40%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  margin-top: 5rem;
+  padding: 2rem;
 }
 
 .emptyCart {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
+  color: #9900ff;
+}
+
+.fullCart {
+  color: #9900ff;
+  text-align: justify;
 }
 
 button.add {
@@ -224,6 +269,34 @@ button.remove {
   justify-content: center;
   background-color: aquamarine;
 }
+
+
+/* MEDIA QUERIES!!!! */
+
+/* LARGE SCREENS */
+@media screen and (max-width: 1701px) {
+  h1 {
+    margin-left: 10rem;
+  }
+  .Header h2 {
+      margin-left: -1rem;
+  }
+}
+@media screen and (max-width: 1601px) {
+  h1 {
+    margin-left: 8.5rem;
+  }
+
+  .Header h2 {
+    margin-left: -2.5rem;
+  }
+  
+  .shopWrapper {
+    width: 95%;
+  }
+}
+
+/* LAPTOPS */
 
 @media screen and (max-width: 1401px){
   h1 {
@@ -259,6 +332,24 @@ button.remove {
   }
 }
 
+@media and screen and (max-width: 1351px) {
+  /* 
+  - make product boxes smaller so two are displayed side by side still 
+  - font smaller on: h1, sideLinks, cart
+  - h2 needs more top
+  */
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 951px) {
+  /* 
+    - make product boxes smaller so two are displayed side by side still 
+    - font smaller on: h1, h2, sideLinks, cart
+    - h2 needs more top
+    */
+}
+
 @media screen and (max-width: 801px) {
   .col1 {
       flex: 1;
@@ -267,4 +358,10 @@ button.remove {
     .col2 {
       flex: 2;
     }
+}
+
+@media screen and (max-width: 701px) {
+  /* 
+    - cart underneath products
+  */
 }

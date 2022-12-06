@@ -6,12 +6,9 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
 
     return (
         <div className="Dispensary col2">
-            
-                <h2>PRODUCTS!</h2>
-                
                 <div className="ShopArea">
                     <div className="CategoryBox">
-                            <h4>Flower</h4>
+                            <h3>Flower</h3>
                         <div className="ProductBox">
                             {products["flower"].map((product) => {
 
@@ -23,8 +20,15 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                                 <ul>
                                     <li key={product.id} className="card">
                                     <img className="smallPic" src={product.image} alt={product.name} />
-                                    <p>{product.name}</p>
-                                    <div>${product.price}</div>
+                                    <h4>{product.name}</h4>
+                                    <div className="cardFlex">
+                                        <p>{product.brand}</p>
+                                        <p>{product.thc}</p>
+                                    </div>
+                                    <div className="cardFlex">
+                                        <p>{product.weight}</p>
+                                        <p>${product.price}</p>
+                                    </div>
                                     <div>
                                         <button 
                                         onClick={dispensaryOnAdd}>Add to Cart</button>
@@ -37,7 +41,7 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                     </div>
 
                     <div className="CategoryBox">
-                        <h4>Concentrates</h4>
+                        <h3>Concentrates</h3>
                         <div className="ProductBox">
                             {products["concentrates"].map((product) => {
 
@@ -49,8 +53,15 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                                 <ul>
                                     <li key={product.id} className="card">
                                     <img className="smallPic" src={product.image} alt={product.name} />
-                                    <p>{product.name}</p>
-                                    <div>${product.price}</div>
+                                    <h4>{product.name}</h4>
+                                    <div className="cardFlex">
+                                        <p>{product.brand}</p>
+                                        <p>{product.thc}</p>
+                                    </div>
+                                    <div className="cardFlex">
+                                        <p>{product.weight}</p>
+                                        <p>${product.price}</p>
+                                    </div>
                                     <div>
                                         <button 
                                         onClick={dispensaryOnAdd}>Add to Cart</button>
@@ -63,7 +74,7 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                     </div>
 
                     <div className="CategoryBox">
-                        <h4>Edibles</h4>
+                        <h3>Edibles</h3>
                         <div className="ProductBox">
                         {products["edibles"].map((product) => {
 
@@ -75,8 +86,15 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                                 <ul>
                                     <li key={product.id} className="card">
                                     <img className="smallPic" src={product.image} alt={product.name} />
-                                    <p>{product.name}</p>
-                                    <div>${product.price}</div>
+                                    <h4>{product.name}</h4>
+                                    <div className="cardFlex">
+                                        <p>{product.brand}</p>
+                                        <p>{product.thc}</p>
+                                    </div>
+                                    <div className="cardFlex">
+                                        <p>{product.weight}</p>
+                                        <p>${product.price}</p>
+                                    </div>
                                     <div>
                                         <button 
                                         onClick={dispensaryOnAdd}>Add to Cart</button>
@@ -101,8 +119,15 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                                 <ul>
                                     <li key={product.id} className="card">
                                     <img className="smallPic" src={product.image} alt={product.name} />
-                                    <p>{product.name}</p>
-                                    <div>${product.price}</div>
+                                    <h4>{product.name}</h4>
+                                    <div className="cardFlex">
+                                        <p>{product.brand}</p>
+                                        <p>{product.thc}</p>
+                                    </div>
+                                    <div className="cardFlex">
+                                        <p>{product.weight}</p>
+                                        <p>${product.price}</p>
+                                    </div>
                                     <div>
                                         <button 
                                         onClick={dispensaryOnAdd}>Add to Cart</button>
