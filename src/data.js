@@ -2,9 +2,22 @@ import GelatoMint from "./assets/tribalFlower1.png"
 import AnimalFace from "./assets/carmelAnimalFace.png"
 import strainsLMT from "./assets/strainsLimitedRNTZ.jpeg"
 import alaskanIceQC from "./assets/alaskanIceQC.png"
+
 import nugzHash from "./assets/nugzHash.png"
 import diamonds from "./assets/premier5Mango.jpeg"
 import shatter from "./assets/shatter.webp"
+import vape from "./assets/vape.webp"
+
+import beverage from "./assets/beverage.webp"
+import beverage3 from "./assets/beverage3.webp"
+import chocolates from "./assets/chocolates.webp"
+import hotSauce from "./assets/hotSauce.webp"
+import softchew from "./assets/softchew.webp"
+
+import bong from "./assets/bong.webp"
+import dabRig from "./assets/dabRig.webp"
+import shatterizer from "./assets/shatterizer.webp"
+import rollingPapers from "./assets/rollingPapers.jpg"
 
 const products = {
     flower: [
@@ -66,14 +79,14 @@ const products = {
         brand: "Nugz",
         price: 27.00,
         weight: "1g",
-        thc: "21%",
+        thc: "34%",
         cbd: "1%",
         description: "Yum yum",
         image: nugzHash
         },
         {
         id: '2',
-        name: "THCA Diamonds",
+        name: "Diamonds",
         class: "Indica",
         brand: "Premium 5",
         price: 45.00,
@@ -88,24 +101,24 @@ const products = {
         name: "WW Shatter",
         class: "White Wedding",
         brand: "Shatterizer",
-        price: 27.00,
-        weight: "3.5g",
-        thc: "21%",
+        price: 23.00,
+        weight: "1g",
+        thc: "69%",
         cbd: "1%",
         description: "Yum yum",
         image: shatter
         },
          {
         id: '4',
-        name: "Shatter",
+        name: "Vape",
         class: "Hybrid",
-        brand: "Carmel",
-        price: 27.00,
-        weight: "3.5g",
-        thc: "21%",
+        brand: "Vortex",
+        price: 30.00,
+        weight: "1g",
+        thc: "85%",
         cbd: "1%",
         description: "Yum yum",
-        image: nugzHash
+        image: vape
         }   
     ],
     edibles: [
@@ -113,13 +126,13 @@ const products = {
         id: '1',
         name: "Beverage",
         class: "Hybrid",
-        brand: "Collective Project",
+        brand: "Bedfellows",
         price: 8.00,
         weight: "200ml",
         thc: "10mg",
         cbd: "1%",
         description: "Yum yum",
-        image: nugzHash
+        image: beverage3
         },
         {
         id: '2',
@@ -131,7 +144,7 @@ const products = {
         thc: "10mg",
         cbd: "1%",
         description: "Yum yum",
-        image: nugzHash
+        image: chocolates
         },
         {
         id: '3',
@@ -143,69 +156,61 @@ const products = {
         thc: "5mg",
         cbd: "5mg",
         description: "Yum yum",
-        image: nugzHash
+        image: softchew
         },
          {
         id: '4',
         name: "Hot Sauce",
         class: "Hybrid",
-        brand: "Bogart's Kitchen",
+        brand: "Bogart's",
         price: 8.00,
         weight: "15ml",
         thc: "10mg",
         cbd: "1%",
         description: "Yum yum",
-        image: nugzHash
+        image: hotSauce
         }
     ],
     accessories: [
         {
         id: '1',
         name: "Bong",
-        class: "Hybrid",
-        brand: "Glass PPL",
-        price: 8.00,
-        weight: "200ml",
-        thc: "10mg",
-        cbd: "1%",
+        class: "glass",
+        brand: "RedTek",
+        price: 20.00,
+        weight: "100g",
         description: "Yum yum",
-        image: nugzHash
+        image: bong
         },
         {
         id: '2',
         name: "Dab Rig",
-        class: "Hybrid",
-        brand: "Glass PPL",
-        price: 8.00,
-        weight: "30g",
-        thc: "10mg",
-        cbd: "1%",
+        class: "glass",
+        brand: "Mary Jane",
+        price: 40.00,
+        weight: "120g",
         description: "Yum yum",
-        image: nugzHash
+        image: dabRig
         },
         {
         id: '3',
         name: "Rolling Papers",
-        class: "Hybrid",
+        class: "paper",
         brand: "RAW",
-        price: 8.00,
+        price: 4.00,
         weight: "15g",
-        thc: "5mg",
-        cbd: "5mg",
         description: "Yum yum",
-        image: nugzHash
+        image: rollingPapers
         },
          {
         id: '4',
-        name: "Pipe",
-        class: "Hybrid",
-        brand: "Glass PPL",
-        price: 8.00,
-        weight: "15ml",
-        thc: "10mg",
-        cbd: "1%",
+        name: "Shatterizer",
+        class: "pen",
+        brand: "Shatterizer",
+        price: 17.00,
+        weight: "30g",
         description: "Yum yum",
-        image: nugzHash
+        image: shatterizer
         }
     ]
 }

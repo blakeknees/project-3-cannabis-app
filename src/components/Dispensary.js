@@ -107,7 +107,7 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                     </div>
 
                     <div className="CategoryBox">
-                        <h4>Accessories</h4>
+                        <h3>Accessories</h3>
                         <div className="ProductBox">
                         {products["accessories"].map((product) => {
 
@@ -122,10 +122,6 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                                     <h4>{product.name}</h4>
                                     <div className="cardFlex">
                                         <p>{product.brand}</p>
-                                        <p>{product.thc}</p>
-                                    </div>
-                                    <div className="cardFlex">
-                                        <p>{product.weight}</p>
                                         <p>${product.price}</p>
                                     </div>
                                     <div>

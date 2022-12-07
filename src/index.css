@@ -17,22 +17,28 @@ h1, h2, h3, h4, p {
 
 h1 {
   font-size: 3.5rem;
+  font-family: 'Arvo', serif;       
 }
 h2 {
   font-size: 2.5rem;
+  font-family: 'Arvo', serif;
 }
 h3 {
   font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
 }
 h4 {
   font-size: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 p {
   font-size: .75rem;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
 }
 
 img.smallPic {
@@ -43,9 +49,11 @@ img.smallPic {
 button {
   padding: .3rem;
   border: 2px dotted blueviolet;
-  background-color: pink;
+  background-color: #faced5;
   width: 100%;
   cursor: pointer;
+  margin-top: .5rem;
+  font-family: 'Arvo', serif;
 }
 
 button.badge {
@@ -212,7 +220,7 @@ h1 {
 }
 
 .card {
-  background-color: white;
+  background-color: #fff7f7;
   border-radius: 3%;
   padding: 1rem;
 }
@@ -223,6 +231,8 @@ h1 {
 .cardFlex p {
   margin: .25rem;
 }
+
+/* SHOPPING CART */
 
 .Cart {
   background-color: lavender;
@@ -255,19 +265,28 @@ h1 {
 }
 
 button.add {
-  background-color: #40c0f0;
+  background-color: #0b6586;
   width: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 button.remove {
-  background-color: #f04040;
+  background-color: #800956;
   width: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .Footer {
   display: flex;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: #96f7d6;
+  color:#9900ff;
+  
+}
+.Footer p{
+  font-size: 1rem;
 }
 
 
@@ -309,7 +328,9 @@ button.remove {
   }
 
   .Header h2 {
-    margin-top: 10rem;
+    margin-top: 17rem;
+    margin-left: -3.5rem;
+    font-size: 2.25rem;
   }
 
   .Dispensary, .Cart {
@@ -332,22 +353,92 @@ button.remove {
   }
 }
 
-@media and screen and (max-width: 1351px) {
-  /* 
-  - make product boxes smaller so two are displayed side by side still 
-  - font smaller on: h1, sideLinks, cart
-  - h2 needs more top
-  */
+@media screen and (max-width: 1351px) {
+  .Header h2 {
+      margin-left: -4.25rem;
+      margin-top: 14rem;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+  h1 {
+    margin-left: 3rem;
+  }
+
+  .sideLinks a{
+    font-size: 1.25rem;
+  }
+  
+  button.badge {
+    width: 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+}
+
+@media screen and (max-width: 1120px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 3.5rem;
+  }
+
+  .Header h2 {
+    font-size: 2rem;
+    margin-left: -3.5rem;
+    margin-top: 13rem;
+  }
+
+  .fullCart {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1002px) {
+  h1 {
+    font-size: 2.65rem;
+    margin-left: 3.75rem;
+  }
 }
 
 
 /* MOBILE */
-@media screen and (max-width: 951px) {
-  /* 
-    - make product boxes smaller so two are displayed side by side still 
-    - font smaller on: h1, h2, sideLinks, cart
-    - h2 needs more top
-    */
+@media screen and (max-width: 941px) {
+  
+  .Header h2 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-top: 11.5rem;
+    }
+
+  main .flex:first-child{
+    flex-direction: column;
+  }
+
+  .Dispensary {
+    margin-bottom: 0;
+  }
+
+  .Cart {
+    margin-bottom: 3rem;
+  }
+
+  .fullCart {
+    font-size: 1.25rem;
+    display: flex;
+  }
+  
+}
+
+@media screen and (max-width: 902px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+
+  .sideLinks {
+    margin-right: 2rem;
+  }
 }
 
 @media screen and (max-width: 801px) {
@@ -360,8 +451,14 @@ button.remove {
     }
 }
 
-@media screen and (max-width: 701px) {
-  /* 
-    - cart underneath products
-  */
+@media screen and (max-width: 601px) {
+  h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
+
+  .sideLinks a {
+    font-size: 1rem;
+  }
 }
