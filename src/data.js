@@ -178,6 +178,7 @@ const products = {
         class: "glass",
         brand: "RedTek",
         price: 20.00,
+        size: `8" w/ bowl`,
         weight: "100g",
         description: "Yum yum",
         image: bong
@@ -188,6 +189,7 @@ const products = {
         class: "glass",
         brand: "Mary Jane",
         price: 40.00,
+        size: `6" w/ nail`,
         weight: "120g",
         description: "Yum yum",
         image: dabRig
@@ -198,16 +200,18 @@ const products = {
         class: "paper",
         brand: "RAW",
         price: 4.00,
+        size: `Pack of 3`,
         weight: "15g",
         description: "Yum yum",
         image: rollingPapers
         },
          {
         id: '4',
-        name: "Shatterizer",
+        name: "Vape Pen",
         class: "pen",
         brand: "Shatterizer",
         price: 17.00,
+        size: `Pack of 1`,
         weight: "30g",
         description: "Yum yum",
         image: shatterizer

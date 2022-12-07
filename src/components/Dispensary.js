@@ -5,7 +5,7 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
     
 
     return (
-        <div className="Dispensary col2">
+        <section className="Dispensary col2">
                 <div className="ShopArea">
                     <div className="CategoryBox">
                             <h3>Flower</h3>
@@ -124,6 +124,9 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                                         <p>{product.brand}</p>
                                         <p>${product.price}</p>
                                     </div>
+                                    <div className="cardFlex">
+                                        <p>{product.size}</p>
+                                    </div>
                                     <div>
                                         <button 
                                         onClick={dispensaryOnAdd}>Add to Cart</button>
@@ -135,7 +138,7 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
                         </div>
                     </div>
                 </div>
-        </div>
+        </section>
     )
 }
 

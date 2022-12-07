@@ -1,11 +1,9 @@
 
 const Footer = () => {
     return (
-        <div className="Footer">
-            <footer>
-                <p>Made with 💓 by Jenn Blakney for Juno College</p>
-            </footer>
-        </div>
+        <section className="Footer">
+                <p>Made with 💓 by <a href="http://www.jenniferblakney.dev" target="_blank">Jenn Blakney</a> for Juno College</p>
+        </section>
     )
 }
 

@@ -6,15 +6,18 @@ import Cart from './components/Cart.js';
 import Footer from './Footer.js';
 import products from './data.js';
 
+/* CREDIT TO BASHIR JAFARZADEH'S SHOPPING CART CODE ALONG */
+  /* https://www.youtube.com/watch?v=AmIdY1Eb8tY */
 
 function App() {
 
   const [ cartItems, setCartItems ] = useState([]);
   
-  // onAdd Function
+  // onAdd Function --> adding items to cart
   const onAdd = (product) => {
     const exist = cartItems.find((cannabis) => cannabis.id === product.id);
-    
+
+    // IF the product exists in the cart, add one more. ELSE add ONE product to start.
     if (exist) {
       const newCartItems = cartItems.map((cannabis) => cannabis.id === product.id ? { ...exist, qty: exist.qty + 1} : cannabis);
       
@@ -26,14 +29,19 @@ function App() {
     }
   }
   
-  // onRemove Function
+  // onRemove Function --> removing items from cart
   const onRemove = (product) => {
     const exist = cartItems.find((cannabis) => cannabis.id === product.id);
+
+    // IF there is one item, DON'T remove. ELSE remove item.
     if (exist.qty === 1) {
       const newCartItems = cartItems.filter((cannabis) => cannabis.id !== product.id);
+
       setCartItems(newCartItems);
     } else {
       const newCartItems = cartItems.map((cannabis) => cannabis.id === product.id ? { ...exist, qty: exist. qty - 1 } : cannabis);
+
+      setCartItems(newCartItems);
     }
   }
 

@@ -10,11 +10,11 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
 
 
     return (
-        <div className="Cart col1">
-            <div>
-                <div className="cartContainer">
+        <section className="Cart col1">
+
+                <ul className="cartContainer">
                     <h2>YOUR CART</h2>
-                {cartItems.length === 0 && <div className="emptyCart">Cart is Empty</div>}
+                {cartItems.length === 0 && <li className="emptyCart">Cart is Empty</li>}
 
                 {cartItems.length === 0
                     ? null
@@ -28,7 +28,7 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
                             }
 
                             return (
-                                <div key={item.id} className="flex fullCart">
+                                <li key={item.id} className="flex fullCart">
                                     <div className="col1">{item.name}</div>
                                     <div className="col1">
                                         <button onClick={dispensaryOnRemove} className="remove">
@@ -41,28 +41,28 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
                                     <div className="col1">
                                         {item.qty} x ${item.price.toFixed(2)}
                                     </div>
-                                </div>
+                                </li>
                             )
                     }))}
                 {cartItems.length !== 0 && (
                     <>
                     <hr />
-                    <div className="flex fullCart">
+                    <li className="flex fullCart">
                         <div className="col2">Items Price</div>
                         <div className="col1">${itemsPrice.toFixed(2)}</div>
-                    </div>
-                    <div className="flex fullCart">
+                    </li>
+                    <li className="flex fullCart">
                         <div className="col2">Tax Price</div>
                         <div className="col1">${taxPrice.toFixed(2)}</div>
-                    </div>
-                    <div className="flex fullCart">
+                    </li>
+                    <li className="flex fullCart">
                         <div className="col2">Shipping Price</div>
                         <div className="col1">${shippingPrice.toFixed(2)}</div>
-                    </div>
-                    <div className="flex fullCart">
+                    </li>
+                    <li className="flex fullCart">
                         <div className="col2">Total Price</div>
                         <div className="col1">${totalPrice.toFixed(2)}</div>
-                    </div>
+                    </li>
                     <hr />
                     <div className="flex">
                         <button onClick={() => alert('Implement Checkout!')}>
@@ -71,10 +71,8 @@ const Cart = ({ cartItems, onAdd, onRemove, products }) => {
                     </div>
                     </>
                 )}
-                </div>
-    
-            </div>
-        </div>
+                </ul>
+            </section>
     )
 }
 

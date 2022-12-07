@@ -2,14 +2,11 @@
 const Header = ({countCartItems, cartItems, products, onAdd, onRemove}) => {
     
     return (
-        <div className="Header">
+        <section className="Header">
             <nav className="flex">
-                <div className="">
-                    
-                        <h1 className="neonTitle">WELCOME TO MY DISPENSARY!</h1>
-                   
-                </div>
 
+                <h1 className="neonTitle">WELCOME TO MY DISPENSARY!</h1>
+                   
                 <div className="sideLinks">
                     <a href="#/cart">
                     Cart{' '}
@@ -22,10 +19,12 @@ const Header = ({countCartItems, cartItems, products, onAdd, onRemove}) => {
                     <a href="#/signin">Sign In</a>
                     </div>
             </nav>
+
             <div className="wrapper">
                 <h2 className="flex">Please enjoy my selection of cannabis products</h2>
             </div>
-        </div>
+            
+        </section>
     )
 }
 
