@@ -17,7 +17,9 @@ h1, h2, h3, h4, p {
 
 h1 {
   font-size: 3.5rem;
-  font-family: 'Arvo', serif;       
+  font-family: 'Arvo', serif; 
+  margin-top: 5rem;
+  margin-left: 15rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -55,7 +57,6 @@ button {
   margin-top: .5rem;
   font-family: 'Arvo', serif;
 }
-
 button.badge {
   background-color: aquamarine;
   border: none;
@@ -76,7 +77,6 @@ nav {
   background-color: rgb(196, 196, 255);
   
 }
-
 nav a{
   display: flex;
   font-size: 1.5rem;
@@ -87,15 +87,6 @@ ul {
   list-style: none;
 }
 
-h1 {
-  margin-top: 5rem;
-  margin-left: 15rem;
-}
-
-.Header h2 {
-  margin-top: 21rem;
-  margin-left: 2.25rem;
-}
 
 .wrapper {
   width: 80%;
@@ -127,6 +118,8 @@ h1 {
   flex: 2;
 }
 
+/* HEADER */
+
 .Header {
   text-align: center;
   background-color: lavender;
@@ -135,7 +128,10 @@ h1 {
   color: #2ec5bd;
 }
 
-
+.Header h2 {
+  margin-top: 21rem;
+  margin-left: 2.25rem;
+}
 .neonTitle {
   color: #2ec5bd;
   text-shadow: 0 0 5px pink,
@@ -177,6 +173,8 @@ h1 {
   margin-right: 5rem;
 }
 
+/* DISPENSARY */
+
 .Dispensary {
   background-color: lavender;
   color: #2ec5bd;
@@ -203,16 +201,13 @@ h1 {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-
 .ProductBox ul {
   padding-left: 2rem;
   display: flex;
 }
-
 .ProductBox h4 {
   margin: 0;
 }
-
 .ProductBox button {
   border-radius: 5%;
   color:#918a81;
@@ -270,7 +265,6 @@ button.add {
   color: #ffffff;
   font-weight: 700;
 }
-
 button.remove {
   background-color: #800956;
   width: 1.5rem;
@@ -283,12 +277,10 @@ button.remove {
   justify-content: center;
   background-color: #96f7d6;
   color:#9900ff;
-  
 }
-.Footer p{
+.Footer p {
   font-size: 1rem;
 }
-
 .Footer a {
   font-weight: 700;
   color: #9900ff;
@@ -345,10 +337,6 @@ button.remove {
   .shopWrapper {
     width: 95%;
     margin: 0 auto;
-  }
-
-  .ShopArea {
-    
   }
 
   .ProductBox {
