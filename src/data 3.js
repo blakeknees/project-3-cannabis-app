@@ -73,7 +73,7 @@ const products = {
 
     concentrates: [
         {
-        id: '5',
+        id: '1',
         name: "OS Hash",
         class: "Hybrid",
         brand: "Nugz",
@@ -85,7 +85,7 @@ const products = {
         image: nugzHash
         },
         {
-        id: '6',
+        id: '2',
         name: "Diamonds",
         class: "Indica",
         brand: "Premium 5",
@@ -97,7 +97,7 @@ const products = {
         image: diamonds
         },
         {
-        id: '7',
+        id: '3',
         name: "WW Shatter",
         class: "White Wedding",
         brand: "Shatterizer",
@@ -109,7 +109,7 @@ const products = {
         image: shatter
         },
          {
-        id: '8',
+        id: '4',
         name: "Vape",
         class: "Hybrid",
         brand: "Vortex",
@@ -123,7 +123,7 @@ const products = {
     ],
     edibles: [
         {
-        id: '9',
+        id: '1',
         name: "Beverage",
         class: "Hybrid",
         brand: "Bedfellows",
@@ -135,7 +135,7 @@ const products = {
         image: beverage3
         },
         {
-        id: '10',
+        id: '2',
         name: "Chocolate",
         class: "Hybrid",
         brand: "Wabi Sabi",
@@ -147,7 +147,7 @@ const products = {
         image: chocolates
         },
         {
-        id: '11',
+        id: '3',
         name: "Soft Chew",
         class: "Hybrid",
         brand: "Wyld Gummies",
@@ -159,7 +159,7 @@ const products = {
         image: softchew
         },
          {
-        id: '12',
+        id: '4',
         name: "Hot Sauce",
         class: "Hybrid",
         brand: "Bogart's",
@@ -173,45 +173,41 @@ const products = {
     ],
     accessories: [
         {
-        id: '13',
+        id: '1',
         name: "Bong",
         class: "glass",
         brand: "RedTek",
         price: 20.00,
-        size: `8" w/ bowl`,
         weight: "100g",
         description: "Yum yum",
         image: bong
         },
         {
-        id: '14',
+        id: '2',
         name: "Dab Rig",
         class: "glass",
         brand: "Mary Jane",
         price: 40.00,
-        size: `6" w/ nail`,
         weight: "120g",
         description: "Yum yum",
         image: dabRig
         },
         {
-        id: '15',
+        id: '3',
         name: "Rolling Papers",
         class: "paper",
         brand: "RAW",
         price: 4.00,
-        size: `Pack of 3`,
         weight: "15g",
         description: "Yum yum",
         image: rollingPapers
         },
          {
-        id: '16',
-        name: "Vape Pen",
+        id: '4',
+        name: "Shatterizer",
         class: "pen",
         brand: "Shatterizer",
         price: 17.00,
-        size: `Pack of 1`,
         weight: "30g",
         description: "Yum yum",
         image: shatterizer

@@ -14,6 +14,8 @@ const Dispensary = ({products, onAdd, cartItems, onRemove}) => {
 
                                 const dispensaryOnAdd = () => {
                                     onAdd(product);
+
+                                    // what if i made it more specific like product.name?
                                 }
 
                                 return (
