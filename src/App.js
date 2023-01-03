@@ -1,5 +1,5 @@
 import './index.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Header.js';
 import Dispensary from './components/Dispensary.js';
 import Cart from './components/Cart.js';
@@ -39,7 +39,7 @@ function App() {
 
       setCartItems(newCartItems);
     } else {
-      const newCartItems = cartItems.map((cannabis) => cannabis.id === product.id ? { ...exist, qty: exist. qty - 1 } : cannabis);
+      const newCartItems = cartItems.map((cannabis) => cannabis.id === product.id ? { ...exist, qty: exist.qty - 1 } : cannabis);
 
       setCartItems(newCartItems);
     }

@@ -7,8 +7,6 @@ import nugzHash from "./assets/nugzHash.png"
 import diamonds from "./assets/premier5Mango.jpeg"
 import shatter from "./assets/shatter.webp"
 import vape from "./assets/vape.webp"
-
-import beverage from "./assets/beverage.webp"
 import beverage3 from "./assets/beverage3.webp"
 import chocolates from "./assets/chocolates.webp"
 import hotSauce from "./assets/hotSauce.webp"

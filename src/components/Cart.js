@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React from "react";
 
 const Cart = ({ cartItems, onAdd, onRemove, products }) => {
